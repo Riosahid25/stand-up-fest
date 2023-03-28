@@ -1,0 +1,790 @@
+@charset "utf-8";
+
+/*
+/*	Copyright (c) 2021 Marketify
+/*	Author: Marketify
+/*	This file is made for CURRENT TEMPLATE
+
+01)	AALI BASE
+02)	AALI MOBILE MENU
+03) AALI HEADER
+04) AALI HERO
+05) AALI ABOUT
+06) AALI SKILLS
+07) AALI PORTFOLIO
+08) AALI SERVICES
+09) AALI RESUME
+10) AALI TESTIMONIALS
+11) AALI NEWS
+12) AALI COUNTER
+13) AALI CONTACT
+14) AALI COPYRIGHT
+15) AALI CURSOR
+16) AALI MEDIA QUERIES (FOR SMALL DEVIVES)
+
+
+
+/*---------------------------------------------------*/
+/*	01) AALI BASE
+/*---------------------------------------------------*/
+
+/* font name file */
+/* @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+	--font-family
+} */
+
+@font-face {
+  font-family: "BwGradual-Black";
+  src: url(/font/BwGradual-Black.otf);
+}
+@font-face {
+  font-family: "BwGradual-BlackItalic";
+  src: url(/font/BwGradual-BlackItalic.otf);
+}
+@font-face {
+  font-family: "BwGradual-Bold";
+  src: url(/font/BwGradual-Bold.otf);
+}
+@font-face {
+  font-family: "BwGradual-BoldItalic";
+  src: url(/font/BwGradual-BoldItalic.otf);
+}
+@font-face {
+  font-family: "BwGradual-Regular";
+  src: url(/font/BwGradual-Regular.otf);
+}
+@font-face {
+  font-family: "BwGradual-Light";
+  src: url(/font/BwGradual-Light.otf);
+}
+
+html {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 1900px;
+  /* font-family: "bw_gradual_demomedium"; */
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #030f25;
+  color: #7d7789;
+}
+svg {
+  fill: currentcolor;
+  width: 15px;
+  height: 15px;
+}
+img.svg {
+  width: 15px;
+  height: 15px;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #aaa6b2;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaa6b2;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaa6b2;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #aaa6b2;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #aaa6b2;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #aaa6b2;
+}
+body.dark::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #9e9ba3;
+}
+body.dark:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9e9ba3;
+  opacity: 1;
+}
+body.dark::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9e9ba3;
+  opacity: 1;
+}
+body.dark:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9e9ba3;
+}
+body.dark::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9e9ba3;
+}
+
+body.dark::placeholder {
+  /* Most modern browsers support this now. */
+  color: #9e9ba3;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #999 #fff;
+}
+body:-webkit-scrollbar-track {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 6px;
+  border: 3px solid #fff;
+}
+body.dark::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* .container {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0px 40px;
+  position: relative;
+  clear: both;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Josefin Sans";
+  color: #15111e;
+}
+
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+.aali_tm_all_wrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.aali_tm_all_wrap,
+.aali_tm_all_wrap * {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.aali_tm_section {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
+}
+#preloader:before,
+#preloader:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+#preloader:after {
+  left: auto;
+  right: 0;
+}
+#preloader .loader_line {
+  margin: auto;
+  width: 1px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.loader_line:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #000;
+  -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+  -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+  animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+.loader_line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #bbb;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: lineround 1200ms linear 0s infinite;
+  -o-animation: lineround 1200ms linear 0s infinite;
+  animation: lineround 1200ms linear 0s infinite;
+  animation-delay: 2000ms;
+}
+
+@keyframes lineheight {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes lineround {
+  0% {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    -o-transform: translateY(200%);
+    transform: translateY(200%);
+  }
+}
+
+/*hiding all*/
+.preloaded .loader_line:after {
+  opacity: 0;
+}
+.preloaded .loader_line {
+  opacity: 0;
+  height: 100% !important;
+}
+.preloaded:before,
+.preloaded:after {
+  -webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+  -o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+  animation: preloadedzero 300ms ease-in-out 500ms forwards;
+}
+@keyframes preloadedzero {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/*---------------------------------------------------*/
+/*	02) AALI MOBILE MENU
+/*---------------------------------------------------*/
+
+.aali_tm_mobile_menu {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 10;
+}
+.aali_tm_mobile_menu .mobile_menu_inner {
+  width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px 15px 20px;
+}
+.aali_tm_mobile_menu .mobile_in {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aali_tm_mobile_menu .mobile_in .logo img {
+  max-width: 70px;
+  max-height: 50px;
+}
+.aali_tm_mobile_menu .trigger {
+  line-height: 0;
+  position: relative;
+  top: 3px;
+}
+.aali_tm_mobile_menu .dropdown {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #fff;
+  display: none;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 25px 40px;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner ul li {
+  margin: 0px;
+  float: left;
+  width: 100%;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding: 0px 0px;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+}
+.aali_tm_mobile_menu .hamburger {
+  padding: 0px !important;
+}
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  width: 30px !important;
+  height: 2px !important;
+}
+.hamburger-box {
+  width: 30px !important;
+}
+
+/*---------------------------------------------------*/
+/*	03) AALI HEADER
+/*---------------------------------------------------*/
+
+.aali_tm_header {
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.aali_tm_header .inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.aali_tm_header.animate {
+  background-color: #fff;
+}
+.aali_tm_header.animate .inner {
+  padding: 22px 0px;
+}
+.aali_tm_header .logo img {
+  max-width: 90px;
+}
+.aali_tm_header .logo .light {
+  display: block;
+}
+.aali_tm_header .logo .dark {
+  display: none;
+}
+.aali_tm_header.animate .logo .light {
+  display: none;
+}
+.aali_tm_header.animate .logo .dark {
+  display: block;
+}
+.aali_tm_header .menu ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.aali_tm_header .menu ul li {
+  margin: 0px 45px 0px 0px;
+  display: inline-block;
+}
+.aali_tm_header .menu ul li:last-child {
+  margin-right: 0px;
+}
+.aali_tm_header .menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.aali_tm_header .menu ul li a:hover {
+  color: #ea4343;
+}
+.aali_tm_header .menu ul li.current a {
+  color: #ea4343;
+}
+.aali_tm_header.animate .menu ul li.current a {
+  color: #ea4343;
+}
+.aali_tm_header.animate .menu ul li a {
+  color: #15111e;
+}
+.aali_tm_header.animate .menu ul li a:hover {
+  color: #ea4343;
+}
+
+/*---------------------------------------------------*/
+/*	15) KURA CURSOR
+/*---------------------------------------------------*/
+
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+}
+.cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 100;
+  background-color: #f4f2f2 !important;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.cursor-inner.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #f4f2f2 !important;
+  opacity: 0.3;
+}
+.cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #f4f2f2 !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 100;
+  opacity: 0.5;
+  -webkit-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+.cursor-outer.cursor-hover {
+  opacity: 0;
+}
+.aali_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1111;
+}
+
+/* main css file */
+.banner_web {
+  position: relative;
+  height: 1000px;
+  width: 100vw;
+  clip-path: inset(0);
+}
+
+.banner_web img {
+  object-fit: cover;
+  position: fixed;
+  /* left: 0;
+  top: 0; */
+  /* width: 100%;
+  height: 100%; */
+  width: 100%;
+  margin-top: -45px;
+}
+
+.tickets input,
+.tickets select {
+  padding: 35px 0 !important;
+}
+
+.about {
+  padding: 50px 0 0;
+}
+
+.about .text-title {
+  font-size: 28px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.about .text-detail-komika-kanan p:nth-child(1) {
+  font-family: "BwGradual-Bold";
+  color: #fff;
+  font-size: 20px;
+}
+
+.about .text-detail-komika-kanan p:nth-child(2) {
+  font-family: "BwGradual-Black";
+  color: #fff;
+  font-size: 35px;
+}
+
+.about .text-detail-komika-kanan p:nth-child(3) {
+  font-family: "BwGradual-Regular";
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.about .text-detail-komika-kanan p.text-kanan-modifie2 {
+  font-size: 18px;
+  font-family: "BwGradual-Regular";
+}
+
+.about .text-detail-komika-kanan p.text-kanan-modifie1 {
+  font-size: 35px;
+  font-family: "BwGradual-Black";
+}
+
+/* .about .text-detail-komika-kiri p:nth-child(1) {
+  font-family: "BwGradual-Bold";
+  color: #fff;
+  font-size: 20px;
+} */
+
+.about .text-detail-komika-kiri p:nth-child(1) {
+  font-family: "BwGradual-Black";
+  color: #fff;
+  font-size: 35px;
+}
+
+.about .text-detail-komika-kiri p:nth-child(2) {
+  font-family: "BwGradual-Regular";
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.info_detail {
+  /* padding: 10px 0; */
+}
+
+.info_detail img {
+  width: 100vw;
+}
+
+.logo-partner img {
+  width: 80%;
+  padding: 150px 0;
+}
+
+.copyrights {
+  padding: 15px 0;
+  background-color: #fff;
+  font-family: "BwGradual-Bold";
+  color: #2f2f2f;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+/*---------------------------------------------------*/
+/*	16) AALI MEDIA QUERIES (FOR SMALL DEVICES)
+/*---------------------------------------------------*/
+
+@media (max-width: 576px) {
+  .container-fluid {
+    padding-left: 0;
+  }
+
+  .banner_web {
+    width: 100vw;
+    margin-top: 55px;
+    height: 230px;
+  }
+
+  .banner_web img {
+    margin-top: 0;
+  }
+
+  .tickets {
+    padding: 15px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .tickets {
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner_web {
+    height: 450px;
+  }
+
+  .banner_web img {
+    margin-top: 0;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+  }
+
+  .tickets input,
+  .tickets select {
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .tickets {
+    padding: 40px;
+    margin: 0;
+  }
+
+  .banner_web {
+    height: 550px;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+  }
+
+  .banner_web {
+    height: 930px;
+  }
+
+  .banner_web img {
+    margin-top: -45px;
+  }
+
+  .tickets {
+    margin: 130px 0;
+    background-color: linear-gradient(180deg, #030f25 8.2%, rgba(4, 21, 47, 0.852751) 60.6%, rgba(4, 21, 47, 0.734375) 118.86%, rgba(4, 21, 47, 0) 195.75%);
+    padding: 120px 190px;
+  }
+
+  .aali_tm_header .logo img {
+    max-width: 75px;
+  }
+  .aali_tm_header .menu ul li {
+    margin-right: 30px;
+  }
+  .aali_tm_header .inner {
+    padding: 20px 0px;
+  }
+  .aali_tm_header.animate .inner {
+    padding: 15px 0px;
+  }
+}
+@media (max-width: 1040px) {
+  .container {
+    padding: 0px 20px;
+  }
+  .aali_tm_header {
+    display: none;
+  }
+  .aali_tm_mobile_menu {
+    display: block;
+  }
+}
