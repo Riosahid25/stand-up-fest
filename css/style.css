@@ -1338,6 +1338,11 @@ h6 {
   line-height: 48px;
 }
 
+.text-detail-komika-kanan img,
+.text-detail-komika-kiri img {
+  width: 100%;
+}
+
 .about .text-detail-komika-kanan p:nth-child(1) {
   font-family: "BwGradual-Bold";
   color: #fff;
@@ -1430,6 +1435,11 @@ h6 {
   .tickets {
     padding: 15px;
     margin: 0;
+  }
+
+  .text-detail-komika-kanan img,
+  .text-detail-komika-kiri img {
+    width: 100%;
   }
 }
 
