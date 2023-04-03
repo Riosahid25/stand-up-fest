@@ -1,0 +1,352 @@
+#banner_web {
+  position: relative;
+  min-height: 80vh;
+  max-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+  z-index: -2;
+}
+
+#banner_web::before {
+  content: '';
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('img/web-banner-pendaftaran-prmo3.jpg') top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  z-index: -3;
+}
+
+#konten {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  transform-style: inherit;
+  z-index: 1;
+}
+
+/* #banner_web{
+  background-image: url('img/web-banner.jpg');
+  height: 100vh;
+
+} */
+
+#navbar-example2 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(max-width:600px) {
+  #banner_web {
+    background-image:
+      url('img/web-banner-pendaftaran-prmo3.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 25vh;
+    max-height: 100vh;
+    z-index: 1;
+  }
+
+  #navbar-example2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #banner_web::before {
+    display: none;
+    visibility: hidden;
+  }
+
+  #konten {
+    min-height: 20vh;
+    width: 100%;
+    position: relative;
+    transform-style: inherit;
+    z-index: 1;
+  }
+
+  .rute:hover {
+    transform: scale(2.4);
+    transition: all .2s ease-in-out;
+  }
+
+}
+
+
+@media (min-width : 992px) {
+  .offcanvas {
+    visibility: visible;
+    position: relative;
+    background: none;
+    border: none;
+    justify-content: end;
+
+  }
+
+}
+
+@media (max-width : 992px) {
+  .offcanvas {
+    width: 250px !important;
+  }
+
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, .2);
+    transform: translateX(-100%);
+
+  }
+
+
+}
+
+@font-face {
+  font-family: Druk Wide;
+  src: url(font/Druk\ Text\ Wide\ Web\ Medium\ Regular.ttf);
+}
+
+@font-face {
+  font-family: Brice;
+  src: url(font/Brice-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(font/Poppins-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(font/Poppins-Light.otf);
+}
+
+
+@font-face {
+  font-family: Gotham-Black;
+  src: url(font/Gotham-Black.otf);
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(font/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url(font/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(font/GothamBook.ttf);
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+
+.owl-carousel .nav-button {
+  height: 90px;
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  top: 120px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+.owl-carousel .owl-prev {
+  left: 0px;
+}
+
+.owl-carousel .owl-next {
+  right: 0px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  color: #ffffff;
+  font-size: 50px;
+  background: #A32535;
+  border-radius: 2px;
+}
+
+.owl-carousel .prev-carousel:hover {
+  background-position: 0px -20px;
+}
+
+.owl-carousel .next-carousel:hover {
+  background-position: -5px -20px;
+}
+
+.scrollings {
+  width: 100%;
+  height: 380px;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+#kartu1:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+#kartu2:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+#kartu3:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+#banner_web {
+  -webkit-animation: fadeInLeft 1.5s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#scrollspyHeading1 {
+  -webkit-animation: fadeIntop 1.5s both;
+}
+
+@-webkit-keyframes fadeIntop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.bi-chevron-down {
+  display: block;
+  text-align: center;
+  font: normal 45px;
+  line-height: 60px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+#arrowDown {
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+
+  40% {
+    -moz-transform: translateY(-20px);
+  }
+
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -o-transform: translateY(0);
+  }
+
+  40% {
+    -o-transform: translateY(-20px);
+  }
+
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}

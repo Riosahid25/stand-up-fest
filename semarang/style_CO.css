@@ -1,0 +1,76 @@
+body {
+  background-image: url("img/bg-checkout.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.col-lg-4 {
+  -webkit-animation: fadeIntop 1.2s;
+}
+
+@-webkit-keyframes fadeIntop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+  }
+}
+
+.col-lg-7 {
+  -webkit-animation: fadeIntop 1.8s;
+}
+
+@-webkit-keyframes fadeIntop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+  }
+}
+
+@font-face {
+  font-family: Druk Wide;
+  src: url(font/Druk\ Text\ Wide\ Web\ Medium\ Regular.ttf);
+}
+
+@font-face {
+  font-family: Brice;
+  src: url(font/Brice-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(font/Poppins-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(font/Poppins-Light.otf);
+}
+
+@font-face {
+  font-family: Gotham-Black;
+  src: url(font/Gotham-Black.otf);
+}
+
+@font-face {
+  font-family: Gotham-Medium;
+  src: url(font/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url(font/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(font/GothamBook.ttf);
+}

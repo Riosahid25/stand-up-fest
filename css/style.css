@@ -1522,6 +1522,11 @@ h6 {
     font-size: 11px;
     word-wrap: break-word;
   }
+
+  .message_1 img {
+    width: 100%;
+    margin-top: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1549,6 +1554,11 @@ h6 {
 
   .tickets img {
     padding: 30px;
+  }
+
+  .message_1 img {
+    width: 80%;
+    margin-top: 50px;
   }
 }
 
@@ -1601,6 +1611,11 @@ h6 {
   }
   .aali_tm_header.animate .inner {
     padding: 15px 0px;
+  }
+
+  .message_1 img {
+    width: 50%;
+    margin-top: -50px;
   }
 }
 @media (max-width: 1040px) {
