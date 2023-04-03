@@ -1413,6 +1413,10 @@ h6 {
   width: 100%;
   height: auto;
 }
+
+.tickets h2 {
+  font-family: "BwGradual-Regular";
+}
 /*---------------------------------------------------*/
 /*	16) AALI MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
