@@ -1414,9 +1414,9 @@ h6 {
   height: auto;
 }
 
-.tickets .shadow h2,
-.tickets .shadow p {
-  font-family: "BwGradual-Regular";
+.tickets h2,
+.tickets p {
+  font-family: "BwGradual-Regular" !important;
 }
 
 .tickets .shadow h2 {
@@ -1428,20 +1428,20 @@ h6 {
   color: #f1eeee;
 }
 
-.tickets form select {
+.tickets .form-floating select {
   font-size: 14px;
   font-weight: 800;
   font-family: "BwGradual-Regular";
   color: #030f25;
 }
 
-.tickets form label {
+.tickets .form-floating label {
   font-size: 14px;
   font-family: "BwGradual-Bold";
   color: #226c94;
 }
 
-.tickets form button {
+.tickets .form-floating button {
   font-size: 15px;
   letter-spacing: 2px;
   font-family: "BwGradual-Bold";
