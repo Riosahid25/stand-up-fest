@@ -34,30 +34,29 @@
 :root {
 	--font-family
 } */
-
 @font-face {
   font-family: "BwGradual-Black";
-  src: url(/font/BwGradual-Black.otf);
+  src: url(/stand-up-fest/font/BwGradual-Black.otf);
 }
 @font-face {
   font-family: "BwGradual-BlackItalic";
-  src: url(/font/BwGradual-BlackItalic.otf);
+  src: url(/stand-up-fest/font/BwGradual-BlackItalic.otf);
 }
 @font-face {
   font-family: "BwGradual-Bold";
-  src: url(/font/BwGradual-Bold.otf);
+  src: url(/stand-up-fest/font/BwGradual-Bold.otf);
 }
 @font-face {
   font-family: "BwGradual-BoldItalic";
-  src: url(/font/BwGradual-BoldItalic.otf);
+  src: url(/stand-up-fest/font/BwGradual-BoldItalic.otf);
 }
 @font-face {
   font-family: "BwGradual-Regular";
-  src: url(/font/BwGradual-Regular.otf);
+  src: url(/stand-up-fest/font/BwGradual-Regular.otf);
 }
 @font-face {
   font-family: "BwGradual-Light";
-  src: url(/font/BwGradual-Light.otf);
+  src: url(/stand-up-fest/font/BwGradual-Light.otf);
 }
 
 html {
