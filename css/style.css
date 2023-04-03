@@ -1414,6 +1414,39 @@ h6 {
   height: auto;
 }
 
+.tickets .shadow h2,
+.tickets .shadow p {
+  font-family: "BwGradual-Regular";
+}
+
+.tickets .shadow h2 {
+  font-size: 35px;
+  color: #f1eeee;
+}
+.tickets .shadow p {
+  font-size: 20px;
+  color: #f1eeee;
+}
+
+.tickets form select {
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "BwGradual-Regular";
+  color: #030f25;
+}
+
+.tickets form label {
+  font-size: 14px;
+  font-family: "BwGradual-Bold";
+  color: #226c94;
+}
+
+.tickets form button {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: "BwGradual-Bold";
+}
+
 /*---------------------------------------------------*/
 /*	16) AALI MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
