@@ -1414,7 +1414,7 @@ h6 {
   height: auto;
 }
 
-.tickets h2,
+/* .tickets h2,
 .tickets p {
   font-family: "BwGradual-Regular" !important;
 }
@@ -1445,7 +1445,7 @@ h6 {
   font-size: 15px;
   letter-spacing: 2px;
   font-family: "BwGradual-Bold";
-}
+} */
 
 /*---------------------------------------------------*/
 /*	16) AALI MEDIA QUERIES (FOR SMALL DEVICES)
