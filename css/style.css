@@ -1322,11 +1322,11 @@ h6 {
   width: 100%;
   margin-top: -45px;
 }
-
+/* 
 .tickets input,
 .tickets select {
-  padding: 35px 0 !important;
-}
+  padding: 35px 0;
+} */
 
 .about {
   padding: 50px 0 0;
@@ -1461,10 +1461,10 @@ h6 {
     padding-left: 0;
   }
 
-  .tickets input,
+  /* .tickets input,
   .tickets select {
     padding: 10px 0;
-  }
+  } */
 
   .tickets img {
     padding: 30px;
