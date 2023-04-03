@@ -34,6 +34,8 @@
 :root {
 	--font-family
 } */
+
+/* for live github */
 @font-face {
   font-family: "BwGradual-Black";
   src: url(/stand-up-fest/font/BwGradual-Black.otf);
@@ -57,6 +59,32 @@
 @font-face {
   font-family: "BwGradual-Light";
   src: url(/stand-up-fest/font/BwGradual-Light.otf);
+}
+
+/* for lokal */
+@font-face {
+  font-family: "BwGradual-Black";
+  src: url(/font/BwGradual-Black.otf);
+}
+@font-face {
+  font-family: "BwGradual-BlackItalic";
+  src: url(/font/BwGradual-BlackItalic.otf);
+}
+@font-face {
+  font-family: "BwGradual-Bold";
+  src: url(/font/BwGradual-Bold.otf);
+}
+@font-face {
+  font-family: "BwGradual-BoldItalic";
+  src: url(/font/BwGradual-BoldItalic.otf);
+}
+@font-face {
+  font-family: "BwGradual-Regular";
+  src: url(/font/BwGradual-Regular.otf);
+}
+@font-face {
+  font-family: "BwGradual-Light";
+  src: url(/font/BwGradual-Light.otf);
 }
 
 html {
@@ -1446,6 +1474,17 @@ h6 {
   font-family: "BwGradual-Bold";
 }
 
+.syarat_ketentuan h2 {
+  color: #fff;
+  font-family: "BwGradual-Bold";
+}
+
+.syarat_ketentuan p {
+  color: #fff;
+  font-family: "BwGradual-Regular";
+  letter-spacing: 1px;
+}
+
 /*---------------------------------------------------*/
 /*	16) AALI MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
@@ -1473,6 +1512,15 @@ h6 {
   .text-detail-komika-kanan img,
   .text-detail-komika-kiri img {
     width: 100%;
+  }
+
+  .logo-partner img {
+    width: 100%;
+  }
+
+  .copyrights {
+    font-size: 11px;
+    word-wrap: break-word;
   }
 }
 
