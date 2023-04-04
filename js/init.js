@@ -13,22 +13,22 @@ jQuery(document).ready(function () {
   aali_tm_nav_bg();
   aali_tm_trigger_menu();
   aali_tm_hero_image();
-  aali_tm_service_popup();
-  aali_tm_portfolio_popup();
-  aali_tm_news_popup();
+  // aali_tm_service_popup();
+  // aali_tm_portfolio_popup();
+  // aali_tm_news_popup();
   // aali_tm_cursor();
   aali_tm_imgtosvg();
-  aali_tm_popup();
-  aali_tm_portfolio();
+  // aali_tm_popup();
+  // aali_tm_portfolio();
   aali_tm_data_images();
-  aali_tm_contact_form();
+  // aali_tm_contact_form();
   aali_tm_jarallax();
-  aali_tm_testimonial_arrow();
-  aali_tm_owl_carousel();
-  aali_tm_about_animation();
-  aali_tm_moving_animation();
-  aali_tm_down();
-  aali_tm_totop();
+  // aali_tm_testimonial_arrow();
+  // aali_tm_owl_carousel();
+  // aali_tm_about_animation();
+  // aali_tm_moving_animation();
+  // aali_tm_down();
+  // aali_tm_totop();
 });
 
 // jQuery(window).load("body", function () {
@@ -57,27 +57,27 @@ window.addEventListener("resize", () => {
 // ---------------   FUNCTIONS    ----------------------
 // -----------------------------------------------------
 
-function aali_tm_testimonial_arrow() {
-  "use strict";
+// function aali_tm_testimonial_arrow() {
+//   "use strict";
 
-  $(".aali_tm_testimonials .direct a")
-    .on("mouseenter", function () {
-      var e = $(this);
-      var p = e.closest(".direct");
-      if (e.hasClass("prev_button")) {
-        p.addClass("prev");
-      } else {
-        p.addClass("next");
-      }
-      e.addClass("hovered");
-      p.addClass("hovered");
-    })
-    .on("mouseleave", function () {
-      var e = $(this);
-      e.removeClass("hovered");
-      e.closest(".direct").removeClass("hovered prev next");
-    });
-}
+//   $(".aali_tm_testimonials .direct a")
+//     .on("mouseenter", function () {
+//       var e = $(this);
+//       var p = e.closest(".direct");
+//       if (e.hasClass("prev_button")) {
+//         p.addClass("prev");
+//       } else {
+//         p.addClass("next");
+//       }
+//       e.addClass("hovered");
+//       p.addClass("hovered");
+//     })
+//     .on("mouseleave", function () {
+//       var e = $(this);
+//       e.removeClass("hovered");
+//       e.closest(".direct").removeClass("hovered prev next");
+//     });
+// }
 
 // -----------------------------------------------------
 // ------------   RESUME IMAGE WIDTH    ----------------
@@ -268,33 +268,33 @@ function aali_tm_hero_image() {
 // -------------  PROGRESS BAR  --------------------
 // -------------------------------------------------
 
-function tdProgress(container) {
-  "use strict";
+// function tdProgress(container) {
+//   "use strict";
 
-  container.find(".progress_inner").each(function () {
-    var progress = jQuery(this);
-    var pValue = parseInt(progress.data("value"), 10);
-    var pColor = progress.data("color");
-    var pBarWrap = progress.find(".bar");
-    var pBar = progress.find(".bar_in");
-    pBar.css({ width: pValue + "%", backgroundColor: pColor });
-    setTimeout(function () {
-      pBarWrap.addClass("open");
-    });
-  });
-}
+//   container.find(".progress_inner").each(function () {
+//     var progress = jQuery(this);
+//     var pValue = parseInt(progress.data("value"), 10);
+//     var pColor = progress.data("color");
+//     var pBarWrap = progress.find(".bar");
+//     var pBar = progress.find(".bar_in");
+//     pBar.css({ width: pValue + "%", backgroundColor: pColor });
+//     setTimeout(function () {
+//       pBarWrap.addClass("open");
+//     });
+//   });
+// }
 
-jQuery(".dodo_progress").each(function () {
-  "use strict";
+// jQuery(".dodo_progress").each(function () {
+//   "use strict";
 
-  var pWrap = jQuery(this);
-  pWrap.waypoint({
-    handler: function () {
-      tdProgress(pWrap);
-    },
-    offset: "90%",
-  });
-});
+//   var pWrap = jQuery(this);
+//   pWrap.waypoint({
+//     handler: function () {
+//       tdProgress(pWrap);
+//     },
+//     offset: "90%",
+//   });
+// });
 
 // -----------------------------------------------------
 // ---------------   PRELOADER   -----------------------
@@ -662,77 +662,77 @@ function aali_tm_about_animation() {
 // -------------    MOVING ANIMATION    ----------------
 // -----------------------------------------------------
 
-function aali_tm_moving_animation() {
-  "use strict";
+// function aali_tm_moving_animation() {
+//   "use strict";
 
-  var detail = $(".moving_effect");
-  var offset = 0;
-  detail.each(function () {
-    var element = $(this);
-    var direction = element.attr("data-direction");
-    $(window).on("scroll", function () {
-      offset = $(window).scrollTop();
-      var h = $(window).height();
-      var i = element.offset().top - offset - h;
-      if (element.attr("data-reverse") == "yes") {
-        i *= -1;
-      }
-      var x = direction === "x" ? (i * 70) / h : 0;
-      var y = direction === "x" ? 0 : (i * 70) / h;
-      if (element.attr("data-reverse") == "yes") {
-        i *= -1;
-      }
-      if (i * -1 < h + 300 && i < 300) {
-        element.css({ transform: "translate3d(" + x + "px, " + y + "px, 0px)" });
-      }
-    });
-  });
-}
+//   var detail = $(".moving_effect");
+//   var offset = 0;
+//   detail.each(function () {
+//     var element = $(this);
+//     var direction = element.attr("data-direction");
+//     $(window).on("scroll", function () {
+//       offset = $(window).scrollTop();
+//       var h = $(window).height();
+//       var i = element.offset().top - offset - h;
+//       if (element.attr("data-reverse") == "yes") {
+//         i *= -1;
+//       }
+//       var x = direction === "x" ? (i * 70) / h : 0;
+//       var y = direction === "x" ? 0 : (i * 70) / h;
+//       if (element.attr("data-reverse") == "yes") {
+//         i *= -1;
+//       }
+//       if (i * -1 < h + 300 && i < 300) {
+//         element.css({ transform: "translate3d(" + x + "px, " + y + "px, 0px)" });
+//       }
+//     });
+//   });
+// }
 
 // -----------------------------------------------------
 // -----------------    TILT    ------------------------
 // -----------------------------------------------------
 
-jQuery(".tilt-effect").tilt({
-  maxTilt: 6,
-  easing: "cubic-bezier(.03,.98,.52,.99)",
-  speed: 500,
-  transition: true,
-});
+// jQuery(".tilt-effect").tilt({
+//   maxTilt: 6,
+//   easing: "cubic-bezier(.03,.98,.52,.99)",
+//   speed: 500,
+//   transition: true,
+// });
 
 // -----------------------------------------------------
 // -----------------    DOWN    ------------------------
 // -----------------------------------------------------
 
-function aali_tm_down() {
-  "use strict";
+// function aali_tm_down() {
+//   "use strict";
 
-  var topbar = jQuery(".aali_tm_header").outerHeight();
+//   var topbar = jQuery(".aali_tm_header").outerHeight();
 
-  jQuery(".anchor").on("click", function () {
-    if ($.attr(this, "href") !== "#") {
-      $("html, body").animate(
-        {
-          scrollTop: $($.attr(this, "href")).offset().top - topbar + 20,
-        },
-        800
-      );
-    }
+//   jQuery(".anchor").on("click", function () {
+//     if ($.attr(this, "href") !== "#") {
+//       $("html, body").animate(
+//         {
+//           scrollTop: $($.attr(this, "href")).offset().top - topbar + 20,
+//         },
+//         800
+//       );
+//     }
 
-    return false;
-  });
-}
+//     return false;
+//   });
+// }
 
 /****************************/
 /********** TOTOP ***********/
 /****************************/
 
-function aali_tm_totop() {
-  "use strict";
+// function aali_tm_totop() {
+//   "use strict";
 
-  jQuery(".totop").on("click", function (e) {
-    e.preventDefault();
-    jQuery("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-  });
-}
+//   jQuery(".totop").on("click", function (e) {
+//     e.preventDefault();
+//     jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+//     return false;
+//   });
+// }
