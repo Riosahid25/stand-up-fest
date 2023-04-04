@@ -175,94 +175,94 @@ function aali_tm_hero_image() {
 // -------------  SERVICE POPUP  -------------------
 // -------------------------------------------------
 
-function aali_tm_service_popup() {
-  "use strict";
+// function aali_tm_service_popup() {
+//   "use strict";
 
-  var modalBox = jQuery(".aali_tm_modalbox");
-  var button = jQuery(".aali_tm_service .service_list ul li .aali_tm_full_link");
-  var closePopup = modalBox.find(".close");
+//   var modalBox = jQuery(".aali_tm_modalbox");
+//   var button = jQuery(".aali_tm_service .service_list ul li .aali_tm_full_link");
+//   var closePopup = modalBox.find(".close");
 
-  button.on("click", function () {
-    var element = jQuery(this);
-    var parent = element.closest(".aali_tm_service .service_list ul li");
-    var elImage = parent.find(".popup_service_image").attr("src");
-    var title = parent.find(".title").html();
-    var content = parent.find(".service_hidden_details").html();
-    modalBox.addClass("opened");
-    modalBox.find(".description_wrap").html(content);
-    modalBox.find(".service_popup_informations").prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + elImage + '"></div></div>');
-    aali_tm_data_images();
-    modalBox.find(".service_popup_informations .image").after('<div class="main_title">' + title + "</div>");
-    return false;
-  });
-  closePopup.on("click", function () {
-    modalBox.removeClass("opened");
-    modalBox.find(".description_wrap").html("");
-    return false;
-  });
-}
+//   button.on("click", function () {
+//     var element = jQuery(this);
+//     var parent = element.closest(".aali_tm_service .service_list ul li");
+//     var elImage = parent.find(".popup_service_image").attr("src");
+//     var title = parent.find(".title").html();
+//     var content = parent.find(".service_hidden_details").html();
+//     modalBox.addClass("opened");
+//     modalBox.find(".description_wrap").html(content);
+//     modalBox.find(".service_popup_informations").prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + elImage + '"></div></div>');
+//     aali_tm_data_images();
+//     modalBox.find(".service_popup_informations .image").after('<div class="main_title">' + title + "</div>");
+//     return false;
+//   });
+//   closePopup.on("click", function () {
+//     modalBox.removeClass("opened");
+//     modalBox.find(".description_wrap").html("");
+//     return false;
+//   });
+// }
 
 // -------------------------------------------------
 // -----------  PORTFOLIO POPUP  -------------------
 // -------------------------------------------------
 
-function aali_tm_portfolio_popup() {
-  "use strict";
+// function aali_tm_portfolio_popup() {
+//   "use strict";
 
-  var modalBox = jQuery(".aali_tm_modalbox");
-  var button = jQuery(".aali_tm_portfolio .portfolio_popup");
-  var closePopup = modalBox.find(".close");
+//   var modalBox = jQuery(".aali_tm_modalbox");
+//   var button = jQuery(".aali_tm_portfolio .portfolio_popup");
+//   var closePopup = modalBox.find(".close");
 
-  button.off().on("click", function () {
-    var element = jQuery(this);
-    var parent = element.closest(".list_inner");
-    var content = parent.find(".hidden_content").html();
-    var image = parent.find(".image .main").data("img-url");
-    var details = parent.find(".details").html();
-    modalBox.addClass("opened");
-    modalBox.find(".description_wrap").html(content);
-    modalBox.find(".popup_details").prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + image + '"></div></div>');
-    modalBox.find(".popup_details .top_image").after('<div class="portfolio_main_title">' + details + "<div>");
-    aali_tm_data_images();
-    return false;
-  });
-  closePopup.on("click", function () {
-    modalBox.removeClass("opened");
-    modalBox.find(".description_wrap").html("");
-    return false;
-  });
-}
+//   button.off().on("click", function () {
+//     var element = jQuery(this);
+//     var parent = element.closest(".list_inner");
+//     var content = parent.find(".hidden_content").html();
+//     var image = parent.find(".image .main").data("img-url");
+//     var details = parent.find(".details").html();
+//     modalBox.addClass("opened");
+//     modalBox.find(".description_wrap").html(content);
+//     modalBox.find(".popup_details").prepend('<div class="top_image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + image + '"></div></div>');
+//     modalBox.find(".popup_details .top_image").after('<div class="portfolio_main_title">' + details + "<div>");
+//     aali_tm_data_images();
+//     return false;
+//   });
+//   closePopup.on("click", function () {
+//     modalBox.removeClass("opened");
+//     modalBox.find(".description_wrap").html("");
+//     return false;
+//   });
+// }
 
 // -------------------------------------------------
 // ----------------  NEWS POPUP  -------------------
 // -------------------------------------------------
 
-function aali_tm_news_popup() {
-  "use strict";
+// function aali_tm_news_popup() {
+//   "use strict";
 
-  var modalBox = jQuery(".aali_tm_modalbox");
-  var button = jQuery(".aali_tm_news .list_inner .aali_tm_full_link,.aali_tm_news .news_list ul li .details .title a,.aali_tm_news .aali_tm_learn_more a");
-  var closePopup = modalBox.find(".close");
+//   var modalBox = jQuery(".aali_tm_modalbox");
+//   var button = jQuery(".aali_tm_news .list_inner .aali_tm_full_link,.aali_tm_news .news_list ul li .details .title a,.aali_tm_news .aali_tm_learn_more a");
+//   var closePopup = modalBox.find(".close");
 
-  button.on("click", function () {
-    var element = jQuery(this);
-    var parent = element.closest(".list_inner");
-    var content = parent.find(".news_hidden_details").html();
-    var image = element.closest(".list_inner").find(".image .main").data("img-url");
-    var details = parent.find(".details").html();
-    modalBox.addClass("opened");
-    modalBox.find(".description_wrap").html(content);
-    modalBox.find(".news_popup_informations").prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + image + '"></div></div>');
-    modalBox.find(".news_popup_informations .image").after('<div class="details">' + details + "<div>");
-    aali_tm_data_images();
-    return false;
-  });
-  closePopup.on("click", function () {
-    modalBox.removeClass("opened");
-    modalBox.find(".description_wrap").html("");
-    return false;
-  });
-}
+//   button.on("click", function () {
+//     var element = jQuery(this);
+//     var parent = element.closest(".list_inner");
+//     var content = parent.find(".news_hidden_details").html();
+//     var image = element.closest(".list_inner").find(".image .main").data("img-url");
+//     var details = parent.find(".details").html();
+//     modalBox.addClass("opened");
+//     modalBox.find(".description_wrap").html(content);
+//     modalBox.find(".news_popup_informations").prepend('<div class="image"><img src="img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="' + image + '"></div></div>');
+//     modalBox.find(".news_popup_informations .image").after('<div class="details">' + details + "<div>");
+//     aali_tm_data_images();
+//     return false;
+//   });
+//   closePopup.on("click", function () {
+//     modalBox.removeClass("opened");
+//     modalBox.find(".description_wrap").html("");
+//     return false;
+//   });
+// }
 
 // -------------------------------------------------
 // -------------  PROGRESS BAR  --------------------
@@ -335,32 +335,32 @@ function aali_tm_my_load() {
 // ------------------   CURSOR    ----------------------
 // -----------------------------------------------------
 
-function aali_tm_cursor() {
-  "use strict";
+// function aali_tm_cursor() {
+//   "use strict";
 
-  var myCursor = jQuery(".mouse-cursor");
+//   var myCursor = jQuery(".mouse-cursor");
 
-  if (myCursor.length) {
-    if ($("body")) {
-      const e = document.querySelector(".cursor-inner"),
-        t = document.querySelector(".cursor-outer");
-      let n,
-        i = 0,
-        o = !1;
-      (window.onmousemove = function (s) {
-        o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (n = s.clientY), (i = s.clientX);
-      }),
-        $("body").on("mouseenter", "a,.aali_tm_topbar .trigger, .cursor-pointer", function () {
-          e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
-        }),
-        $("body").on("mouseleave", "a,.aali_tm_topbar .trigger, .cursor-pointer", function () {
-          ($(this).is("a") && $(this).closest(".cursor-pointer").length) || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"));
-        }),
-        (e.style.visibility = "visible"),
-        (t.style.visibility = "visible");
-    }
-  }
-}
+//   if (myCursor.length) {
+//     if ($("body")) {
+//       const e = document.querySelector(".cursor-inner"),
+//         t = document.querySelector(".cursor-outer");
+//       let n,
+//         i = 0,
+//         o = !1;
+//       (window.onmousemove = function (s) {
+//         o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), (n = s.clientY), (i = s.clientX);
+//       }),
+//         $("body").on("mouseenter", "a,.aali_tm_topbar .trigger, .cursor-pointer", function () {
+//           e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
+//         }),
+//         $("body").on("mouseleave", "a,.aali_tm_topbar .trigger, .cursor-pointer", function () {
+//           ($(this).is("a") && $(this).closest(".cursor-pointer").length) || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"));
+//         }),
+//         (e.style.visibility = "visible"),
+//         (t.style.visibility = "visible");
+//     }
+//   }
+// }
 
 // -----------------------------------------------------
 // ---------------    IMAGE TO SVG    ------------------
@@ -400,74 +400,74 @@ function aali_tm_imgtosvg() {
 // --------------------   POPUP    ---------------------
 // -----------------------------------------------------
 
-function aali_tm_popup() {
-  "use strict";
+// function aali_tm_popup() {
+//   "use strict";
 
-  jQuery(".gallery_zoom").each(function () {
-    // the containers for all your galleries
-    jQuery(this).magnificPopup({
-      delegate: "a.zoom", // the selector for gallery item
-      type: "image",
-      gallery: {
-        enabled: true,
-      },
-      removalDelay: 300,
-      mainClass: "mfp-fade",
-    });
-  });
-  jQuery(".popup-youtube, .popup-vimeo").each(function () {
-    // the containers for all your galleries
-    jQuery(this).magnificPopup({
-      disableOn: 700,
-      type: "iframe",
-      mainClass: "mfp-fade",
-      removalDelay: 160,
-      preloader: false,
-      fixedContentPos: false,
-    });
-  });
+//   jQuery(".gallery_zoom").each(function () {
+//     // the containers for all your galleries
+//     jQuery(this).magnificPopup({
+//       delegate: "a.zoom", // the selector for gallery item
+//       type: "image",
+//       gallery: {
+//         enabled: true,
+//       },
+//       removalDelay: 300,
+//       mainClass: "mfp-fade",
+//     });
+//   });
+//   jQuery(".popup-youtube, .popup-vimeo").each(function () {
+//     // the containers for all your galleries
+//     jQuery(this).magnificPopup({
+//       disableOn: 700,
+//       type: "iframe",
+//       mainClass: "mfp-fade",
+//       removalDelay: 160,
+//       preloader: false,
+//       fixedContentPos: false,
+//     });
+//   });
 
-  jQuery(".soundcloude_link").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-  });
-}
+//   jQuery(".soundcloude_link").magnificPopup({
+//     type: "image",
+//     gallery: {
+//       enabled: true,
+//     },
+//   });
+// }
 
 // -------------------------------------------------
 // -----------------    PORTFOLIO    ---------------
 // -------------------------------------------------
 
-function aali_tm_portfolio() {
-  "use strict";
+// function aali_tm_portfolio() {
+//   "use strict";
 
-  if (jQuery().isotope) {
-    // Needed variables
-    var filter = jQuery(".aali_tm_portfolio .portfolio_filter ul");
+//   if (jQuery().isotope) {
+//     // Needed variables
+//     var filter = jQuery(".aali_tm_portfolio .portfolio_filter ul");
 
-    if (filter.length) {
-      // Isotope Filter
-      filter.find("a").on("click", function () {
-        var element = jQuery(this);
-        var selector = element.attr("data-filter");
-        var list = element.closest(".aali_tm_portfolio").find(".portfolio_list").children("ul");
-        list.isotope({
-          filter: selector,
-          animationOptions: {
-            duration: 750,
-            easing: "linear",
-            queue: false,
-          },
-        });
+//     if (filter.length) {
+//       // Isotope Filter
+//       filter.find("a").on("click", function () {
+//         var element = jQuery(this);
+//         var selector = element.attr("data-filter");
+//         var list = element.closest(".aali_tm_portfolio").find(".portfolio_list").children("ul");
+//         list.isotope({
+//           filter: selector,
+//           animationOptions: {
+//             duration: 750,
+//             easing: "linear",
+//             queue: false,
+//           },
+//         });
 
-        filter.find("a").removeClass("current");
-        element.addClass("current");
-        return false;
-      });
-    }
-  }
-}
+//         filter.find("a").removeClass("current");
+//         element.addClass("current");
+//         return false;
+//       });
+//     }
+//   }
+// }
 
 // -----------------------------------------------------
 // ---------------   DATA IMAGES    --------------------
@@ -489,40 +489,40 @@ function aali_tm_data_images() {
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-function aali_tm_contact_form() {
-  "use strict";
+// function aali_tm_contact_form() {
+//   "use strict";
 
-  jQuery(".contact_form #send_message").on("click", function () {
-    var name = jQuery(".contact_form #name").val();
-    var email = jQuery(".contact_form #email").val();
-    var message = jQuery(".contact_form #message").val();
-    var subject = jQuery(".contact_form #subject").val();
-    var success = jQuery(".contact_form .returnmessage").data("success");
+//   jQuery(".contact_form #send_message").on("click", function () {
+//     var name = jQuery(".contact_form #name").val();
+//     var email = jQuery(".contact_form #email").val();
+//     var message = jQuery(".contact_form #message").val();
+//     var subject = jQuery(".contact_form #subject").val();
+//     var success = jQuery(".contact_form .returnmessage").data("success");
 
-    jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
-    //checking for blank fields
-    if (name === "" || email === "" || message === "") {
-      jQuery("div.empty_notice").slideDown(500).delay(2000).slideUp(500);
-    } else {
-      // Returns successful data submission message when the entered information is stored in database.
-      jQuery.post("modal/contact.php", { ajax_name: name, ajax_email: email, ajax_message: message, ajax_subject: subject }, function (data) {
-        jQuery(".contact_form .returnmessage").append(data); //Append returned message to message paragraph
+//     jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
+//     //checking for blank fields
+//     if (name === "" || email === "" || message === "") {
+//       jQuery("div.empty_notice").slideDown(500).delay(2000).slideUp(500);
+//     } else {
+//       // Returns successful data submission message when the entered information is stored in database.
+//       jQuery.post("modal/contact.php", { ajax_name: name, ajax_email: email, ajax_message: message, ajax_subject: subject }, function (data) {
+//         jQuery(".contact_form .returnmessage").append(data); //Append returned message to message paragraph
 
-        if (jQuery(".contact_form .returnmessage span.contact_error").length) {
-          jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);
-        } else {
-          jQuery(".contact_form .returnmessage").append("<span class='contact_success'>" + success + "</span>");
-          jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
-        }
+//         if (jQuery(".contact_form .returnmessage span.contact_error").length) {
+//           jQuery(".contact_form .returnmessage").slideDown(500).delay(2000).slideUp(500);
+//         } else {
+//           jQuery(".contact_form .returnmessage").append("<span class='contact_success'>" + success + "</span>");
+//           jQuery(".contact_form .returnmessage").slideDown(500).delay(4000).slideUp(500);
+//         }
 
-        if (data === "") {
-          jQuery("#contact_form")[0].reset(); //To reset form fields on success
-        }
-      });
-    }
-    return false;
-  });
-}
+//         if (data === "") {
+//           jQuery("#contact_form")[0].reset(); //To reset form fields on success
+//         }
+//       });
+//     }
+//     return false;
+//   });
+// }
 
 // -----------------------------------------------------
 // --------------------    JARALLAX    -----------------
@@ -559,62 +559,62 @@ new WOW().init();
 // ----------------    OWL CAROUSEL    -----------------
 // -----------------------------------------------------
 
-function aali_tm_owl_carousel() {
-  "use strict";
+// function aali_tm_owl_carousel() {
+//   "use strict";
 
-  var carousel = jQuery(".aali_tm_testimonials .owl-carousel");
+//   var carousel = jQuery(".aali_tm_testimonials .owl-carousel");
 
-  var rtlMode = false;
+//   var rtlMode = false;
 
-  if (jQuery("body").hasClass("rtl")) {
-    rtlMode = "true";
-  }
+//   if (jQuery("body").hasClass("rtl")) {
+//     rtlMode = "true";
+//   }
 
-  carousel.owlCarousel({
-    loop: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn",
-    items: 1,
-    lazyLoad: true,
-    autoplay: true,
-    autoplayTimeout: 6000,
-    smartSpeed: 1000,
-    margin: 0,
-    dots: true,
-    nav: false,
-    navSpeed: true,
-    responsive: {
-      0: {
-        mouseDrag: false,
-        touchDrag: true,
-      },
-      1100: {
-        mouseDrag: true,
-        touchDrag: true,
-      },
-    },
-  });
+//   carousel.owlCarousel({
+//     loop: true,
+//     animateOut: "fadeOut",
+//     animateIn: "fadeIn",
+//     items: 1,
+//     lazyLoad: true,
+//     autoplay: true,
+//     autoplayTimeout: 6000,
+//     smartSpeed: 1000,
+//     margin: 0,
+//     dots: true,
+//     nav: false,
+//     navSpeed: true,
+//     responsive: {
+//       0: {
+//         mouseDrag: false,
+//         touchDrag: true,
+//       },
+//       1100: {
+//         mouseDrag: true,
+//         touchDrag: true,
+//       },
+//     },
+//   });
 
-  carousel
-    .parent()
-    .find(".next_button")
-    .click(function () {
-      carousel.trigger("next.owl.carousel");
-      return false;
-    });
-  // Go to the previous item
-  carousel
-    .parent()
-    .find(".prev_button")
-    .click(function () {
-      // With optional speed parameter
-      // Parameters has to be in square bracket '[]'
-      carousel.trigger("prev.owl.carousel");
-      return false;
-    });
+//   carousel
+//     .parent()
+//     .find(".next_button")
+//     .click(function () {
+//       carousel.trigger("next.owl.carousel");
+//       return false;
+//     });
+//   // Go to the previous item
+//   carousel
+//     .parent()
+//     .find(".prev_button")
+//     .click(function () {
+//       // With optional speed parameter
+//       // Parameters has to be in square bracket '[]'
+//       carousel.trigger("prev.owl.carousel");
+//       return false;
+//     });
 
-  aali_tm_imgtosvg();
-}
+//   aali_tm_imgtosvg();
+// }
 
 // -----------------------------------------------------
 // -------------------    COUNTER    -------------------
